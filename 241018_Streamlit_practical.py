@@ -75,7 +75,7 @@ st.write("""
             Use the panels to select options and interact with the data.
     """)
 #data
-df = pd.read_csv("gdp_lifeexp_pov.csv", index_col=0)#change file path
+df = pd.read_csv("global_development_data.csv", index_col=0)#change file path
 df['year'] = df['year'].astype(int)
 #tabs
 tab1, tab2, tab3 = st.tabs(["Global Overview", "Country Deep Dive", "Data Explorer"])
